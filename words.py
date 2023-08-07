@@ -1,0 +1,1 @@
+words = ["reject", 'Pass', "hello", "thankyou", 'welcome', 'greet', 'girl']
