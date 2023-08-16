@@ -1,5 +1,8 @@
+from typing import List
+
+
 class Solution:
-    def solveNQueens(self, n: int) -> List[List[str]]:
+    def solveNQueens(n: int) -> List[List[str]]:
         post_dig = set()  # row + column
         neg_dig = set()  # row - column
         col = set()
@@ -32,6 +35,9 @@ class Solution:
 
         backtracking(0)
         return res
+
+
+print(Solution.solveNQueens(4))
 
 
 
