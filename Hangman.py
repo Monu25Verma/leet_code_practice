@@ -1,16 +1,18 @@
-#list of word, # select the char to feld the words
-#user will get the choice # chances(0< words>)
+# list of word, # select the char to field the words
+# user will get the choice # chances(0< words>)
 
 
 import random
 from words import words
 import string
 
-def user_input(words):
-    word = random.choice(words)
+
+def user_input(words_val):
+    word = random.choice(words_val)
     while '_' in word or ' ' in word:
-        word = random.choice(words)
+        word = random.choice(words_val)
     return word
+
 
 def hangman():
     word = user_input(words)
@@ -21,7 +23,7 @@ def hangman():
     while len(word_letter) > 0:
         print('you have use the letter: ', ' '.join(used_letters))
 
-        word_list =[letter if letter in used_letters else '-' for letter in word]
+        word_list = [letter if letter in used_letters else '-' for letter in word]
         print('current word: ', ' '.join(word_list))
 
         used_letter = input("guess a letter: ").upper()
@@ -36,17 +38,8 @@ def hangman():
             print("invalid character. please try again ")
 
 
-
-
-
-
-
-
-
-
-
 user_input = input("type something: ")
-print(user_input)
+print(hangman)
 
 
 
