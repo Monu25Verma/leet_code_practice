@@ -5,8 +5,8 @@ class Solution:
         value = {}  # val : index
 
         for i, n in enumerate(nums):
-            diff = target - n
-            if diff in value:
+            diff = target - n           #9-2 ->7
+            if diff in value:           # 7 in val
                 return [value[diff], i]
             value[n] = i
         return
