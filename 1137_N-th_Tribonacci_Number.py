@@ -12,4 +12,4 @@ class Solution:
             n3 = nth
         return n3
 
-print(Solution.tribonacci(25))
+print(Solution.tribonacci(2))
