@@ -4,4 +4,4 @@ class Solution:
         return max(nums[0] * nums[1] * nums[2], nums[0] * nums[-1] * nums[-2])
 
 
-print(Solution.maximumProduct([1, 2, 3]))
+print(Solution.maximumProduct([1, 2, 5]))
