@@ -1,5 +1,5 @@
 class Solution:
-    def canPlaceFlowers(self, flowerbed: List[int], n: int) -> bool:
+    def canPlaceFlowers(flowerbed: list[int], n: int) -> bool:
         if n == 0:
             return True
 
@@ -14,3 +14,4 @@ class Solution:
         return False
 
 
+print(Solution.canPlaceFlowers([1, 0, 0, 1, 0], 2))
