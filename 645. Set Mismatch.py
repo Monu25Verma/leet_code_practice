@@ -29,7 +29,7 @@ nums = [1,2,2,4]
 #         l[1] = i
 # print(l[0], l[1])
 
-nums.sort()
+
 dic = {}
 result = []
 for i in range(1, len(nums)+1):
